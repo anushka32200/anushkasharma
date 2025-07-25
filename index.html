@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ai games</title>
+    <link rel="stylesheet"href="style.css">
+</head>
+<body>
+    <h1> JARVIS AI COORDINATOR</h1>
+    <button onclick="startlistening()">start jarvis</button>
+    <p id="output">waiting for your command</p>
+
+    <div id="tic tac toe"class="hidden">
+<h1> TIC TAC TOE</h1>
+<div class="board" id="board"></div>
+<button onclick="playtictactoe()">play</button>
+<p id="gamestatus"></p>
+</div>
+
+    <div id="stne paper scissor" class="hidden">
+     <h1> STONE PAPER SCISSOR</h1>
+     <button onclick="playstonepaperscissor()">play</button>
+     <p id="stonepaperscissorresult"></p>
+    </div>
+
+
+
+
+    <div id="ludo"class="hidden">
+        <h1>LUDO DICE</h1>
+        <button onclick="rolldice()">roll dice</button>
+        <P id="diceresult"></P>
+    </div>
+
+
+</html>
