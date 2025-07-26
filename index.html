@@ -1,37 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> ai games</title>
-    <link rel="stylesheet"href="style.css">
-</head>
-<body>
-    <h1> JARVIS AI COORDINATOR</h1>
-    <button onclick="startlistening()">start jarvis</button>
-    <p id="output">waiting for your command</p>
-
-    <div id="tic tac toe"class="hidden">
-<h1> TIC TAC TOE</h1>
-<div class="board" id="board"></div>
-<button onclick="playtictactoe()">play</button>
-<p id="gamestatus"></p>
-</div>
-
-    <div id="stne paper scissor" class="hidden">
-     <h1> STONE PAPER SCISSOR</h1>
-     <button onclick="playstonepaperscissor()">play</button>
-     <p id="stonepaperscissorresult"></p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-Tac-Toe Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="msg-container hide">
+      <p id="msg">Winner</p>
+      <button id="new-btn">New Game</button>
     </div>
-
-
-
-
-    <div id="ludo"class="hidden">
-        <h1>LUDO DICE</h1>
-        <button onclick="rolldice()">roll dice</button>
-        <P id="diceresult"></P>
-    </div>
-
-
+    <main>
+      <h1>Tic Tac Toe</h1>
+      <div class="container">
+        <div class="game">
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+        </div>
+      </div>
+      <button id="reset-btn">Reset Game</button>
+    </main>
+    <script src="app.js"></script>
+  </body>
 </html>
