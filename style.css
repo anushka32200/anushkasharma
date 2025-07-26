@@ -1,62 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    background-color: rgb(145, 206, 206);
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-    margin: 5;
-    padding: 20px;
-    text-align: center;
-
+  background-color: #548687;
+  text-align: center;
 }
 
+.container {
+  height: 70vh;
+  display: flex;
 
-button{
-    padding: 10px 25px;
-    font-size: larger;
-    margin: 20px;
-    cursor: pointer;
-    background-color: rgb(189, 189, 234);
-    font-weight: bold;
-    box-shadow: 0cqmin;
-    border-color:darkblue ;
+  justify-content: center;
+  align-items: center;
 }
 
-.board{
-    display: grid;
-    grid-template-columns: repeat(3,100px);
-    gap: 10px;
-    margin: 20px auto;
-    justify-content: center;
+.game {
+  height: 60vmin;
+  width: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5vmin;
 }
 
-.cell{
-    width: 100px;
-    height: 100px;
-    align-items: center;
-    background-color: rgb(136, 228, 142);
-    cursor: pointer;
-    border: 2px solid #333;
-    font-size: medium;
-    display: flex;
-    justify-content: center;
-    line-height: 50px;
+.box {
+  height: 18vmin;
+  width: 18vmin;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+  font-size: 8vmin;
+  color: #b0413e;
+  background-color: #ffffc7;
 }
 
-input[type="number"],
-input[type="text"]{
-    padding: 10px;
-    width: 80%;
-    max-width: 250px;
-    font-size: 16px;
-    margin-top: 10px;
-    border-radius: 8px;
-    border: none;
-    outline: none;
-    background: #222;
-    color: #00ffe1;
-    text-align: center;
+#reset-btn {
+  padding: 1rem;
+  font-size: 1.25rem;
+  background-color: #191913;
+  color: #fff;
+  border-radius: 1rem;
+  border: none;
 }
 
+#new-btn {
+  padding: 1rem;
+  font-size: 1.25rem;
+  background-color: #191913;
+  color: #fff;
+  border-radius: 1rem;
+  border: none;
+}
 
-.hidden{
-    display: none;
+#msg {
+  color: #ffffc7;
+  font-size: 5vmin;
+}
+
+.msg-container {
+  height: 100vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.hide {
+  display: none;
 }
